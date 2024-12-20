@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "62a37585-e460-49c9-9fd8-94bae47f746d",
+		"name": "home assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40225937"
+	},
+	"item": [
+		{
+			"name": "Retrieve_all_change_requests",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Qp4ZS$Iazf9$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dev290639.service-now.com/api/now/table/:tableName:",
+					"protocol": "https",
+					"host": [
+						"dev290639",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						":tableName:"
+					],
+					"variable": [
+						{
+							"key": "tableName:",
+							"value": "change_request"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
